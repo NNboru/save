@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>save files</title>
+    <link rel='icon' href='../static/favicon.ico' type="image/png" />
+    <link rel=stylesheet href='../static/save.css' />
+</head>
+
+<body id=bdy>
+    <div id=error class='hide'></div>
+    <div id=droping class='hide'>Just drop it! 😉</div>
+    <div id=loader class='hide'></div>
+
+    <div id=upzone>
+        <input type="file" name='file' multiple=true id='frmfile' />
+        <input type='button' value='Select files' onclick='frmfile.click()' />
+        <br/>
+        or drop files here
+    </div>
+    <div id='main'>
+        <table id=tab>
+            <tr>
+                <th>NAME</th>
+                <th>SIZE</th>
+                <th>DATE</th>
+                <th>LINK</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src='../static/save.js'></script>
+</body>
+
+</html>
