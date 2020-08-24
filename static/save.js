@@ -44,7 +44,7 @@ async function upload(files){
             if(dict['code'])
             showerror(dict['msg']);
             else{
-                tab.insertAdjacentHTML('beforeEnd',`
+                tab.insertAdjacentHTML('afterBegin',`
                     <tr>
                         <td><a href='https://save.pythonanywhere.com/load/${dict['msg']}'>${files[i].name}</a></td></td>
                         <td>${getsize(files[i].size)}</td>
@@ -93,7 +93,6 @@ bdy.ondrop=e=>{
 }
 bdy.ondragover=e=>{
     e.preventDefault();
-    console.dir('yo');
     droping.classList.remove('hide');
 }
 
