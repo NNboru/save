@@ -44,7 +44,7 @@ async function upload(files){
             if(dict['code'])
             showerror(dict['msg']);
             else{
-                tab.insertAdjacentHTML('afterBegin',`
+                tabhead.insertAdjacentHTML('afterEnd',`
                     <tr>
                         <td><a href='https://save.pythonanywhere.com/load/${dict['msg']}'>${files[i].name}</a></td></td>
                         <td>${getsize(files[i].size)}</td>
